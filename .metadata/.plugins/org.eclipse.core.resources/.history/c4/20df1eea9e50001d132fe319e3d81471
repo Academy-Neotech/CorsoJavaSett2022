@@ -1,0 +1,21 @@
+package srl.neotech.scacchi;
+
+public class Startup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Partita p=new Partita();
+//		Giocatore g1=new Giocatore();
+//		Giocatore g2=new Giocatore();
+//		TavoloDaGioco tavolo=new TavoloDaGioco();
+
+		
+		p.getG1().setNome("Massimiliano");
+        p.getG2().setNome("Matteo");
+		
+        
+        
+	}
+
+}

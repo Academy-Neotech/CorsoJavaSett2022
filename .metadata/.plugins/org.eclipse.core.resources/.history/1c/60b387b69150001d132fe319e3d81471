@@ -1,0 +1,23 @@
+package srl.neotech.corsojava;
+
+public class Startup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Ragno ragnoViolino=new Ragno();
+
+		ragnoViolino.setNumeroZampe(8);
+		ragnoViolino.setNumeroOcchi(30);
+		
+		Ape apeMaia=new Ape();
+		apeMaia.setNumeroZampe(6);
+		apeMaia.setRegina(false);
+		
+		ragnoViolino.mangia();
+		apeMaia.mangia();
+		
+
+	}
+
+}

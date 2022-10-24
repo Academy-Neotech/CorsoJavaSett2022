@@ -1,0 +1,18 @@
+package srl.neotech.corsojava;
+
+public class Televisore {
+	
+	private int volumeAudio;
+
+	public int getVolumeAudio() {
+		return volumeAudio;
+	}
+
+	public void setVolumeAudio(int volumeAudio) {
+		
+		this.volumeAudio = volumeAudio;
+	}
+	
+	
+
+}

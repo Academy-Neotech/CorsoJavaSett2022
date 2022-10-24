@@ -1,0 +1,16 @@
+package srl.neotech.corsojava.testclass;
+
+public class Startup {
+
+	//firma di startup dell'applicazione
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Automobile primaAuto=new Automobile();
+	Automobile secondaAuto=new Automobile();
+	Automobile terzaAuto=new Automobile();
+	
+	
+	}
+
+}

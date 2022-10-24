@@ -1,0 +1,11 @@
+package srl.neotech.scacchi;
+
+public class Cella {
+	
+	private Integer posizione;
+	private int anni;
+	private 
+	
+	
+
+}

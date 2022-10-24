@@ -1,0 +1,21 @@
+package srl.neotech.typeobject;
+
+public class Boing747 extends Aereo{
+	
+	private Boolean salaVip;
+
+	public Boolean getSalaVip() {
+		return salaVip;
+	}
+
+	public void setSalaVip(Boolean salaVip) {
+		this.salaVip = salaVip;
+	}
+	
+	@Override
+	public void avanza() {
+		
+	}
+	
+
+}

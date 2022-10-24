@@ -1,0 +1,21 @@
+package srl.neotech.giocofantasy;
+
+public class Startup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	Giocatore g1=new Umano();
+	Giocatore g2=new Mostro();
+	
+	g1.attacca();
+	g2.attacca();
+	
+	g1.mangia();
+	g1.mangia();
+	
+	}
+	
+
+}

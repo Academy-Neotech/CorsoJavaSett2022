@@ -1,0 +1,9 @@
+package srl.neotech.scacchi;
+
+import java.util.ArrayList;
+
+public class TavoloDaGioco {
+	
+	ArrayList<Cella> celle=new ArrayList<>();
+
+}

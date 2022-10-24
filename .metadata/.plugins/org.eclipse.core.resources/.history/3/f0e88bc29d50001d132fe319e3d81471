@@ -1,0 +1,24 @@
+package srl.neotech.scacchi;
+
+public class Cella {
+	
+	private Integer posizione;
+	private int anni;
+	private boolean b;
+	private Boolean b2;
+	
+	private Giocatore gx=new Giocatore();
+	
+	private void test() {
+		
+		// Unboxing
+		posizione=28;
+		b2.valueOf(true);
+		
+		
+		
+		
+	}
+	
+
+}

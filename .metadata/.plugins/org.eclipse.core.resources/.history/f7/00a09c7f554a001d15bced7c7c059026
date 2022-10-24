@@ -1,0 +1,14 @@
+package srl.neotech;
+
+import java.util.ArrayList;
+
+public class Startup {
+	
+	public static ArrayList<Giocattolo> giocattoli=new ArrayList<Giocattolo>();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

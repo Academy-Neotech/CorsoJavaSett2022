@@ -1,0 +1,21 @@
+package srl.neotech.typeobject;
+
+public class Startup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Aereo aereo=new Aereo();
+		aereo.setStato(new Stato(Stato.EnumStato.DA_VALIDARE));
+		System.out.println(aereo.getStato().getId());
+		System.out.println(aereo.getStato().getDescrizione());
+		
+		
+		Aereo aereo2=new Aereo();
+		aereo2.setStato(new Stato(Stato.EnumStato.VALIDATO));
+		System.out.println(aereo2.getStato().getId());
+		System.out.println(aereo2.getStato().getDescrizione());
+		
+	}
+
+}

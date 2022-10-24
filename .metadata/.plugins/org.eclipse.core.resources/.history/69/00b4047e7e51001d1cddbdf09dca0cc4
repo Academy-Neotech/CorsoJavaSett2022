@@ -1,0 +1,8 @@
+package srl.neotech.typeobject;
+
+public class Stato {
+	
+	private Integer id;
+	private String descrizione:
+
+}

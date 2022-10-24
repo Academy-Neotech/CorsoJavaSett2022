@@ -1,0 +1,15 @@
+package srl.neotech;
+
+public class Startup {
+
+	public  void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Nave.naviga();
+		
+		
+	}
+	
+	
+
+}

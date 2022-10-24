@@ -1,0 +1,11 @@
+package srl.neotech.typeobject;
+
+public class Automobile implements IMezzoDiTrasporto{
+
+	@Override
+	public void avanza() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

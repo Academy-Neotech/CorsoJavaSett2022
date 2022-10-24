@@ -1,0 +1,13 @@
+package srl.neotech.corsojava;
+
+public class Squalo extends Pesce{
+
+
+	public void azzanna() {
+		System.out.println("un squalo azzanna");
+	}
+	
+	@Override
+	publiv void nuota() {
+	
+}

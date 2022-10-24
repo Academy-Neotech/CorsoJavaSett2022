@@ -1,0 +1,18 @@
+package srl.neotech.typeobject;
+
+public class Startup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Aereo aereo=new Aereo();
+		
+		aereo.setId("Ciao");
+		System.out.println(aereo.getId());
+		
+		IMezzoDiTrasporto mezzoUno=new Automobile();
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package srl.neotech.scacchi;
+
+public class Partita {
+
+	
+	TavoloDaGioco unTavolo=new TavoloDaGioco();
+	Giocatore g1=new Giocatore();
+	Giocatore g2=new Giocatore();
+	
+	
+}

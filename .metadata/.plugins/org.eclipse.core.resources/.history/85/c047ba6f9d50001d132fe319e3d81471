@@ -1,0 +1,19 @@
+package srl.neotech.scacchi;
+
+public class Cella {
+	
+	private Integer posizione;
+	private int anni;
+	private boolean b;
+	private Boolean b2;
+	
+	private void test() {
+		
+		
+		posizione=98;
+		
+		
+	}
+	
+
+}

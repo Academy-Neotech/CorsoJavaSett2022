@@ -1,0 +1,9 @@
+package srl.neotech.corsojava;
+
+public class Ape extends Insetto{
+	
+	private boolean isRegina;
+	
+	
+
+}

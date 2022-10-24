@@ -1,0 +1,7 @@
+package srl.neotech.typeobject;
+
+public class Boing747 extends Aereo{
+	
+	private Boolean 
+
+}

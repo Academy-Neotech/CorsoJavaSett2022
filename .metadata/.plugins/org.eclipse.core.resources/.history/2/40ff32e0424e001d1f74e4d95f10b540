@@ -1,0 +1,17 @@
+package srl.neotech.giocofantasy;
+
+public class Umano implements Giocatore{
+
+	@Override
+	public void mangia() {
+		System.out.println("Un giocatore mangia un pollo");
+		
+	}
+
+	@Override
+	public void attacca() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

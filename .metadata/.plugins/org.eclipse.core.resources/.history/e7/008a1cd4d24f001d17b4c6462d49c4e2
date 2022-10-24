@@ -1,0 +1,30 @@
+package srl.neotech;
+
+public class Nave {
+	
+	private static int lunghezza;
+	private static String nome;
+	
+	
+	public static void naviga() {
+		System.out.println("Sto navigando");
+		lunghezza=45;
+	}
+	
+	
+	public int getLunghezza() {
+		return lunghezza;
+	}
+	public void setLunghezza(int lunghezza) {
+		this.lunghezza = lunghezza;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+
+}

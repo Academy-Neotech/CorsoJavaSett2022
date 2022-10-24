@@ -1,0 +1,18 @@
+package srl.neotech.giocofantasy;
+
+public class Mostro implements Giocatore{
+
+	@Override
+	public void mangia() {
+		System.out.println("Un mostro mangia il fango");
+		
+	}
+
+	@Override
+	public void attacca() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

@@ -1,0 +1,5 @@
+package srl.neotech.typeobject;
+
+public interface IMezzoSullaStrada {
+
+}

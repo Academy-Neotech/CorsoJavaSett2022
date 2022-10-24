@@ -1,0 +1,17 @@
+package srl.neotech.corsojava;
+
+public class Ragno extends Insetto{
+
+	private int numeroOcchi;
+	private 
+
+	public int getNumeroOcchi() {
+		return numeroOcchi;
+	}
+
+	public void setNumeroOcchi(int numeroOcchi) {
+		this.numeroOcchi = numeroOcchi;
+	}
+	
+	
+}

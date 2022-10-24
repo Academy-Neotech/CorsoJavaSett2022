@@ -1,0 +1,16 @@
+package srl.neotech.corsojava;
+
+public class Startup {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		Albero alberoDiMele=new Albero();
+		alberoDiMele.setEta(8);
+		if(alberoDiMele.getEta()<0)
+		alberoDiMele.setNome("Ciao");
+		
+		System.out.println(alberoDiMele.getNome());
+	}
+
+}

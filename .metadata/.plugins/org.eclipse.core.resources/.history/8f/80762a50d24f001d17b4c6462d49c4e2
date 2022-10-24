@@ -1,0 +1,12 @@
+package srl.neotech;
+
+public class PadreDiStartup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Startup s=new Startup();
+		s.main(null);
+	}
+
+}

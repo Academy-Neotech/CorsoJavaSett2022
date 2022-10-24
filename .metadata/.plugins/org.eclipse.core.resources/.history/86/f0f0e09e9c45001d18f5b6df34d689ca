@@ -1,0 +1,10 @@
+package srl.neotech.corsojava.testclass;
+
+public class Startup {
+
+	//firma di stratup dell'applicazione
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+}
