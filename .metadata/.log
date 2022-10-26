@@ -4758,3 +4758,105 @@ java.io.FileNotFoundException: /home/neotech/gitclones/GITHUB/.metadata/.plugins
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1150)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2022-10-26 19:44:48.738
+!MESSAGE Could not write metadata for '/Servers'.
+!STACK 0
+java.io.FileNotFoundException: /home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.markers.snap (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1897)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1209)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1150)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-10-26 19:50:58.175
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 213 and size 872417024
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:685)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:485)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:477)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:579)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1256)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1232)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:826)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:425)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-10-26 19:51:15.985
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 213 and size 872417024
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:685)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:485)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:477)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:579)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1256)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1232)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:826)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:425)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.core.resources 4 568 2022-10-26 19:51:16.057
+!MESSAGE Could not write metadata for '/Servers'.
+!STACK 0
+java.io.FileNotFoundException: /home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.markers.snap (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1897)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1209)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1150)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-10-26 19:51:37.679
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 213 and size 872417024
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:685)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:485)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:477)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:579)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1256)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1232)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:826)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:425)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-10-26 19:51:45.783
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.IOException: Failed to read index data from file:/home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index at offset 213 and size 872417024
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:685)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:485)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:477)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:579)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1256)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1232)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:826)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:425)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.OutOfMemoryError: Java heap space
