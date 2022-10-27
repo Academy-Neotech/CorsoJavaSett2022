@@ -6,6 +6,7 @@ public class Startup {
 		// TODO Auto-generated method stub
 		System.out.println("Test Git");
 		System.out.println("Test git 02");
+		System.out.println("Aggiungo develop senza ulsante rosso");
 	}
 
 }
