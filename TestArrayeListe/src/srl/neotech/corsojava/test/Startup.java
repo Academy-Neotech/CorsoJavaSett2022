@@ -12,6 +12,7 @@ public class Startup {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		System.out.println("Cambio colore verde");
 		
 	ArrayList<String> giorniDellaSettimanaDinamici=new ArrayList<String>();		
 	for(int j=0;j<1000;j++) {
