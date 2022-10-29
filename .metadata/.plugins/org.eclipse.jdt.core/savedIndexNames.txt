@@ -1,9 +1,16 @@
 INDEX VERSION 1.131+/home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclipse.jdt.core
 3703194086.index
+<<<<<<< HEAD
 2268293751.index
 3571112389.index
 3808431544.index
 1605864538.index
+=======
+3126092761.index
+2268293751.index
+3571112389.index
+3808431544.index
+>>>>>>> addpulsanteRosso
 4177618154.index
 1865797976.index
 1280767600.index
@@ -12,5 +19,9 @@ INDEX VERSION 1.131+/home/neotech/gitclones/GITHUB/.metadata/.plugins/org.eclips
 4196622058.index
 2091637206.index
 2453084859.index
+<<<<<<< HEAD
+=======
+3632491394.index
+>>>>>>> addpulsanteRosso
 1963900814.index
 2754723014.index
