@@ -19,6 +19,7 @@ public class Startup {
     }
 		
     alberi.get(170).altezza=400;
+    System.out.println("Cambio colore Rosso");
     
 	}
 

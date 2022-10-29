@@ -7,6 +7,7 @@ public class Startup {
 		System.out.println("Test Git");
 		System.out.println("Test git 02");
 		System.out.println("Aggiungo develop senza ulsante rosso");
+		System.out.println("Cambio colore viola");
 	}
 
 }
