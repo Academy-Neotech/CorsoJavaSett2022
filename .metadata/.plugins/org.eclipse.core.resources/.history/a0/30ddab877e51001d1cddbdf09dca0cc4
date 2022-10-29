@@ -1,8 +1,0 @@
-package srl.neotech.typeobject;
-
-public class Aereo {
-
-	
-	private String id;
-	private 
-}

@@ -1,6 +1,0 @@
-package srl.neotech.giocofantasy;
-
-public interface Giocatore {
-
-	
-}

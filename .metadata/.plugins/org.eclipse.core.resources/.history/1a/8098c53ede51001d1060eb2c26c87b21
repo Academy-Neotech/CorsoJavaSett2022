@@ -1,7 +1,0 @@
-package srl.neotech.typeobject;
-
-public interface IMezzoDiTrasporto {
-	
-	
-
-}

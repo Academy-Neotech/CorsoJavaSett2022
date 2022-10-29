@@ -1,7 +1,0 @@
-package srl.neotech.corsojava.testclass;
-
-public class Startup {
-
-	int numeroBandierine=6;
-
-}

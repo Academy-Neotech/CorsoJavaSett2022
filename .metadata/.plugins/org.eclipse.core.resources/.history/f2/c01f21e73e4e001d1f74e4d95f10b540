@@ -1,7 +1,0 @@
-package srl.neotech.corsojava;
-
-public class Televisore {
-	
-	private int volume;
-
-}
