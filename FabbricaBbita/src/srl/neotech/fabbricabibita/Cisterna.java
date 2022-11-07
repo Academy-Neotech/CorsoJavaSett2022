@@ -1,7 +1,8 @@
 package srl.neotech.fabbricabibita;
 
 public class Cisterna {
-	
+
+
 private String tipologia;
 private Integer quantita;
 private Integer evapPerDay;
