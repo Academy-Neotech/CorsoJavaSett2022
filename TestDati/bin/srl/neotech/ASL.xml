@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dettaglio-asl> 
+   <denominazione>ASL ROMA 1</denominazione>
+   <via>Via Benevento, 34 </via>
+   <orario-apertura>09.00</orario-apertura>
+   <orario-chiusura>17.00</orario-chiusura>
+   <numero-parcheggi>180</numero-parcheggi>
+   <ospedali>
+       <ospedale id="ospedale_01">
+           <denominazione>San Massimiliano</denominazione>
+           <via>Viale Kant, 56</via>
+           <reparti>
+                <reparto id="reparto_01" stato="chiuso">
+                    <denominazione>Ortopedia</denominazione>
+                    <primario>Dott. Saccucci</primario>
+                   <posti-letto>67</posti-letto>
+                </reparto>
+                <reparto id="reparto_02" stato="aperto">
+                    <denominazione>Chirugia</denominazione>
+                    <primario>Dott.sa Camponeschi</primario>
+                   <posti-letto>79</posti-letto>
+                </reparto>
+                <reparto id="reparto_03" stato="in ristrutturazione">
+                    <denominazione>Medicina Generale</denominazione>
+                    <primario>Dott. Guiso</primario>
+                   <posti-letto>380</posti-letto>
+                </reparto>
+           </reparti>
+       </ospedale>
+        <ospedale id="ospedale_02">
+           <denominazione>San Feliciano</denominazione>
+           <via>Viale Giulio Cesarie, 56</via>
+           <reparti>
+                <reparto>
+                    <denominazione>Ortopedia</denominazione>
+                    <primario>Dott. Saccucci</primario>
+                   <posti-letto>67</posti-letto>
+                </reparto>
+                <reparto>
+                    <denominazione>Chirugia</denominazione>
+                    <primario>Dott.sa Camponeschi</primario>
+                   <posti-letto>79</posti-letto>
+                </reparto>
+                <reparto>
+                    <denominazione>Medicina Generale</denominazione>
+                    <primario>Dott. Guiso</primario>
+                   <posti-letto>380</posti-letto>
+                </reparto>
+           </reparti>
+      </ospedale>   
+   </ospedali>
+</dettaglio-asl>
