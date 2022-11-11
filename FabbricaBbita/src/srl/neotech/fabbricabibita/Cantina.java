@@ -13,14 +13,20 @@ public class Cantina {
 	}
 
 
+
+
 	public Integer getLivelloMinimoDiGas() {
 		return livelloMinimoDiGas;
 	}
 
 
+
+
 	public void setLivelloMinimoDiGas(Integer livelloMinimoDiGas) {
 		this.livelloMinimoDiGas = livelloMinimoDiGas;
 	}
+
+
 
 
 	public void setCisterne(List<Cisterna> cisterne) {

@@ -81,7 +81,20 @@ public class Startup {
 			j++;
 		}
 		System.out.println("CISTERNA CON MAGGIORI GIORNI DISPINIBILI:"+numeroCisterna+" GIORNI ENTRO CUI NON CI SARÀ PIU BIBITA VENDIBILE:"+numeroMassimoDiGiorni);
+	
+	
+		Integer quantitaTotale=0;
+		for(Cisterna iesimaCisterna:cantina.getCisterne()) {
+		     if(iesimaCisterna.getQuantita()>100) quantitaTotale=quantitaTotale+iesimaCisterna.getQuantita();
+		}
+	    System.out.println("La quantita totale delle cisterne con quantita>100:"+quantitaTotale);
+		
+		
 	}
+	
+	
+	
+	
 	
 	
 
