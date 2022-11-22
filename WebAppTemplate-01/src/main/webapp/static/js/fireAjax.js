@@ -22,7 +22,7 @@ var fire_ajax_post = function (send_url, send_data) {
 
 
 
-var fire_ajax_pathvar = function(send_url) {
+var fire_ajax_get = function(send_url) {
     var retValue = null;
     $.ajax({
         type: "GET",

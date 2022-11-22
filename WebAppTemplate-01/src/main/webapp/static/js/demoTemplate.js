@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 //getCount.recount button
 $("#btnRecount").click(function() {
-  datas=fire_ajax_pathvar("/api/getCountElementi");
+  datas=fire_ajax_get("api/getCountElementi");
   $("#countValue").text(datas.simpleData);
 });
    
@@ -10,7 +10,7 @@ $("#btnRecount").click(function() {
 //getList.reload button
 $("#btnReload").click(function() {
    $('#tableDatas tbody').empty();
-  datas=fire_ajax_pathvar("api/getListaElementi");
+  datas=fire_ajax_get("api/getListaElementi");
    var table = $("#tableDatas tbody");
     $.each(datas.elementi, function(idx, elem){
         table.append("<tr><td>"+elem.id+"</td><td>"+elem.descrizione+"</td><td><button  type='button' class='btn btn-warning'>cancella</button></td></tr>");
@@ -24,7 +24,7 @@ $("#btnAdd").click(function() {
 	       id:$("#id").val(),
            descrizione:$("#descrizione").val()
      }
-    resp=fire_ajax_post("/api/addElemento",data);
+    resp=fire_ajax_post("api/addElemento",data);
     
    //message
    

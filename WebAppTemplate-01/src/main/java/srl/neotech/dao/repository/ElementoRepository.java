@@ -31,9 +31,7 @@ public class ElementoRepository {
 		
 		//Query
 		String query="select count(*) from elemento";
-		
 		Integer numElementi=jdbcTemplate.queryForObject(query,params,Integer.class);
-		
 		return numElementi;
 	}
 	
@@ -44,7 +42,6 @@ public class ElementoRepository {
 		params.addValue("idElemento", id);
 		//Query
 		String query="select * from elemento where id = :id";
-		
 		Elemento elemento=jdbcTemplate.queryForObject(
 				query,
                 params,

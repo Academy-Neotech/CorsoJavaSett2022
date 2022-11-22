@@ -9,9 +9,9 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../static/js/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="static/js/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../static/css/adminlte.min.css">
+  <link rel="stylesheet" href="static/css/adminlte.min.css">>
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -63,13 +63,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/list" class="nav-link">
+                <a href="list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>getList</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/count" class="nav-link">
+                <a href="count" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>getCount</p>
                 </a>
@@ -77,7 +77,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/insertData" class="nav-link">
+            <a href="insertData" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Insert data
@@ -173,14 +173,14 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="../static/js/plugins/jquery/jquery.min.js"></script>
+<script src="static/js/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../static/js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../static/js/adminlte.min.js"></script>
+<script src="static/js/adminlte.min.js"></script>
 <!-- Demo Template -->
-<script src="../static/js/fireAjax.js"></script>
-<script src="../static/js/demoTemplate.js"></script>
+<script src="static/js/fireAjax.js"></script>
+<script src="static/js/demoTemplate.js"></script>
 
 </body>
 </html>

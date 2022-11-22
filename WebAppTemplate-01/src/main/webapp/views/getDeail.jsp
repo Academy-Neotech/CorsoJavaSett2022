@@ -24,7 +24,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/" class="nav-link">Home</a>
+        <a href="index3.html" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -50,7 +50,7 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
@@ -129,11 +129,11 @@
           </div>
         </div>
         <div class="card-body">
-        	<div class="row">
+                 <div class="row">
         		<div class="col-md-6">
-        		<input class="form-control" type="text" placeholder="id" id="id" name="id">
+        		<input class="form-control" type="text" placeholder="id" id="id" value="${elemento.id}" name="id">
         		</br>
-        		<input class="form-control" type="text" placeholder="descrizione" id="descrizione" name="descrizione">
+        		<input class="form-control" type="text" value="${elemento.descrizione}"placeholder="descrizione" id="descrizione" name="descrizione">
         		 <button type="button" class="btn btn-info" id="btnAdd" name="btnAdd">aggiungi</button>
         	    </div>
         	</div>
