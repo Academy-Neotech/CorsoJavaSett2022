@@ -11,39 +11,17 @@
         <artifactId>maven-shade-plugin</artifactId>
         <executions>
           <execution>
-            <id>shade-libs</id>
             <phase>package</phase>
             <goals>
               <goal>shade</goal>
             </goals>
             <configuration>
-              <outputFile>target/assembly/${project.artifactId}-libs.jar</outputFile>
-              <artifactSet>
-                <excludes />
-              </artifactSet>
+              <shadedArtifactAttached>true</shadedArtifactAttached>
               <transformers>
                 <transformer>
-                  <resource>META-INF/spring.handlers</resource>
-                </transformer>
-                <transformer>
-                  <resource>META-INF/spring.schemas</resource>
+                  <mainClass>srl.neotech.Startup</mainClass>
                 </transformer>
               </transformers>
-            </configuration>
-          </execution>
-          <execution>
-            <id>shade-main</id>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <outputFile>target/assembly/${project.artifactId}.jar</outputFile>
-              <artifactSet>
-                <includes>
-                  <include>...</include>
-                </includes>
-              </artifactSet>
             </configuration>
           </execution>
         </executions>
