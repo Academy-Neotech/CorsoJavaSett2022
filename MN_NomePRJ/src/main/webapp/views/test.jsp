@@ -15,21 +15,26 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+<script src="static/js/test.js"></script>
 </head>
 
 <body>
 	<div class="clearfix">
 		<div class="row">
 			<div class="col-md-4">
-				<h1>Provvaaaaaaaa MAX !!!!</h1>
+				<i class="fa-solid fa-ghost" style="font-size:20em;color:blue;"></i><h1>Provvaaaaaaaa MAX !!!!</h1> 
 				<div class="spinner-border" role="status">
 					<span class="visually-hidden">Loading...</span>
 				</div>
 			</div>
            <div class="col-md-8">
-			<button type="button" class="btn btn-primary" onmouseenter="scriviSullEnter();" onCLick="scriviSulClick();">Primo pulsante</button>
+           <!-- inline -->
+			<button type="button" class="btn btn-primary">Primo pulsante</button>
 
-			<button type="button" class="btn btn-secondary" onmouseout="scriviSulBlur();">Secondary</button>
+			<button type="button" class="btn btn-warning">Secondary</button>
 			<button type="button" id="pulsante_verde" class="btn btn-success">Success</button>
 			<button type="button" id="pulsante_rosso" class="btn btn-danger">Danger</button>
 			<button type="button" id="pulsante_giallo" class="btn btn-warning">Warning</button>
@@ -134,49 +139,28 @@
 	</div>
 	<div class="col-md-6"></div>
 	</div>	
-	</div>
+
+
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+    <table style="border: 2px solid red;" id="tabella_impiccato">
+    <tr><td id="c1">A</td><td id="c2" class="miotd">B</td><td id="c3" class="miotd">C</td></tr>
+    <tr><td id="c4">A</td><td id="c5" class="miotd">B</td><td id="c6" class="miotd">C</td></tr>
+    <tr><td id="c7">A</td><td id="c8" class="miotd">B</td><td id="c9" class="miotd">C</td></tr>
+    </table>
+</div>
+<div class="col-md-3"></div>
+</div>		
+</div>
+	
+
 </body>
-
-
-<script src="static/js/test.js"></script>
-
-<!-- JAvascript puro -->
-<script>
-function scriviSulClick(){
-	alert("click premuto!");
-}
-
-function scriviSullEnter(){
-	alert("sono entrato!");
-}
-
-function scriviSulBlur(){
-	alert("sono uscito!");
-}
-</script>
-
-<!-- con JQuery -->
-<script>
-//#  seleziona l'elemnto che ha id:
-//.  seleziona l'elemento che ha class:	
-$("#pulsante_verde,#pulsante_nero").click(
-  function() {
-  $("#pulsante_rosso").hide();
- });
-
-
-$( "#pulsante_giallo" ).click(
-	function() {
-	  $("#pulsante_rosso").show();
-	  $("#validationCustom01").val("ciaooooo");
-	  var testo=$("#validationCustom01").val();
-	  alert(testo);
-	});
-</script>
-
+<script></script>
 
 
 <script>
+
 //Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
   'use strict'

@@ -11,7 +11,7 @@ public class HomeController {
     //Rotta per la home
     @GetMapping(value="/")
     public String home() {
-        return "home";
+        return "test";
     }
     
    
