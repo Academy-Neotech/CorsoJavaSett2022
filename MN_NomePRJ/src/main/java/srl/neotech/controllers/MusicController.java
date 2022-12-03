@@ -18,4 +18,11 @@ public class MusicController {
 	public String testJQuery() {
 		return "testJQuery";
 	}
+	
+	
+	//Rotta
+	@GetMapping(value="impiccato")
+	public String impiccato() {
+		return "impiccato";
+	}
 }

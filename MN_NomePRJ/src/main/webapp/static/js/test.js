@@ -24,14 +24,25 @@ $(document).ready(function() {
  });
 
 
+$("#validationCustom01").keypress(
+	function(){
+		$("#pulsante_rosso").removeClass("btn-danger");
+		$("#pulsante_rosso").addClass("btn-success");
+	}
+);
+
+
+
+
 //bind.
-$( "#pulsante_giallo" ).click(
+$("#pulsante_giallo").click(
 	function() {
 	  $("#pulsante_rosso").show();
-	  $("#validationCustom01").val("ciaooooo");
+	  //$("#validationCustom01").val("ciaooooo");
 	  var testo=$("#validationCustom01").val();
 	  alert(testo);
-	});
+	}
+	);
   
   
 });

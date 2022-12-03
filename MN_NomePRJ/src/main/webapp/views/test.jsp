@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
+
 <!-- font awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
@@ -24,13 +25,13 @@
 <body>
 	<div class="clearfix">
 		<div class="row">
-			<div class="col-md-4">
-				<i class="fa-solid fa-ghost" style="font-size:20em;color:blue;"></i><h1>Provvaaaaaaaa MAX !!!!</h1> 
+			<div class="col-md-2">
+				<i class="fa-solid fa-ghost" style="font-size:10em;color:violet;"></i><h1>Provvaaaaaaaa MAX !!!!</h1> 
 				<div class="spinner-border" role="status">
 					<span class="visually-hidden">Loading...</span>
 				</div>
 			</div>
-           <div class="col-md-8">
+           <div class="col-md-10">
            <!-- inline -->
 			<button type="button" class="btn btn-primary">Primo pulsante</button>
 
