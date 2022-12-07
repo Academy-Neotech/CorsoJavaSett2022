@@ -4,6 +4,7 @@ public class Elemento {
 
 	private Integer id;
 	private String descrizione;
+	private Motore motore;
 	
 	public Elemento() {
 		
@@ -27,6 +28,14 @@ public class Elemento {
 	}
 	public void setDescrizione(String descrizione) {
 		this.descrizione = descrizione;
+	}
+
+	public Motore getMotore() {
+		return motore;
+	}
+
+	public void setMotore(Motore motore) {
+		this.motore = motore;
 	}
 	
 	
