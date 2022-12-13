@@ -1,4 +1,4 @@
-package srl.pippo.fuoriContext;
+package srl.neotech.test;
 
 import org.springframework.stereotype.Component;
 
@@ -14,5 +14,8 @@ public class Motore {
 		this.cilindrata = cilindrata;
 	}
 	
+	public void scriviMessaggio() {
+		System.out.println("Ciao!!");
+	}
 
 }

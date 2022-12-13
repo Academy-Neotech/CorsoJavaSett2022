@@ -10,23 +10,31 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import srl.neotech.model.Elemento;
-import srl.pippo.fuoriContext.Automobile;
+import srl.neotech.test.Automobile;
 
 @Controller
 public class MusicController {
 	
 	//IOC: Inversion of Control.
+	//Crea Motore--> Crea Automobile--> MusicController 
 	
 	@Autowired //voglio usare 
 	Automobile auto;
 	
-	//dimenticatevi le variabili livello di classe.
+	//No variabili a livello di classe !!!!!!!!
+	//Perchè essendo Singleton sarebbero sharate con tutti i chiamanti.
+	
+	@GetMapping(value="testSpring")
+	public String testSpring() {
+		auto.getMotore().scriviMessaggio();
+		return "test";
+	}
 	
 	
 	//Rotta
 	@GetMapping(value="prima_rotta/{id}/{citta}")
 	//le chiamate sono serializzate....
-	public String primaRotta(
+	public String primaRotta(	
 		@PathVariable("id") String idDato,
 		@PathVariable("citta") String cittaDato
 		) {
@@ -34,8 +42,7 @@ public class MusicController {
 		auto.getMotore().setCilindrata(3000);
 		System.out.println(auto.getMotore().getCilindrata());
 		contaOggetti=contaOggetti+1;
-		System.out.println(idDato);
-		System.out.println(cittaDato);
+		System.out.println(contaOggetti);
 		return "test";
 	}
 	

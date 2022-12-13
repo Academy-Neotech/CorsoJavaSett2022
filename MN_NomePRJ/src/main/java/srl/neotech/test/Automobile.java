@@ -1,4 +1,4 @@
-package srl.pippo.fuoriContext;
+package srl.neotech.test;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
