@@ -1,10 +1,12 @@
 package srl.neotech.model;
 
+import srl.neotech.dto.MotoreDTO;
+
 public class Elemento {
 
 	private Integer id;
 	private String descrizione;
-	private Motore motore;
+	private MotoreDTO motore;
 	
 	public Elemento() {
 		
@@ -30,11 +32,11 @@ public class Elemento {
 		this.descrizione = descrizione;
 	}
 
-	public Motore getMotore() {
+	public MotoreDTO getMotore() {
 		return motore;
 	}
 
-	public void setMotore(Motore motore) {
+	public void setMotore(MotoreDTO motore) {
 		this.motore = motore;
 	}
 	

@@ -4,6 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Motore {
+	
+	
 	private Integer cilindrata;
 
 	public Integer getCilindrata() {
