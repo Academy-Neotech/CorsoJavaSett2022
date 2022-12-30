@@ -11,8 +11,10 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="static/js/plugins/fontawesome-free/css/all.min.css">
+ 
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
   <!-- Theme style -->
   <link rel="stylesheet" href="static/css/adminlte.min.css">
 </head>
@@ -51,20 +53,20 @@
 
       <!-- SidebarSearch Form -->
 
-      <!-- Sidebar Menu -->
+           <!-- Sidebar Menu -->
       <nav class="mt-2">
          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="insertData" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="home" class="nav-link">
+              <i class="nav-icon fas fa-house"></i>
               <p>Home</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="insertData" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="listAuto" class="nav-link">
+              <i class="nav-icon fas fa-car-side"></i>
               <p>Lista Automobili</p>
             </a>
           </li>

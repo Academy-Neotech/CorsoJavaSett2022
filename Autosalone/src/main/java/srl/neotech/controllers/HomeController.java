@@ -16,13 +16,17 @@ public class HomeController {
 	HomeService homeService;
 	
     //Rotta per la home
-    @GetMapping(value="/")
+    @GetMapping(value={"/","/home"})
     public String home(ModelMap modelMap) {
         String url=homeService.getImmagine();
         
         modelMap.addAttribute("urlImmagine",url);
         return "home";
     }
+    
+    
+
+ 
     
    
 }

@@ -32,6 +32,24 @@ public class Autosalone {
 		
 		primaAuto.getAccessori().add(cerchiLega);
 		automobili.add(primaAuto);
+		
+		 primaAuto=new Automobile();
+		primaAuto.setId("2");
+		primaAuto.setTarga("BR556SX");
+		primaAuto.setColore(EColore.NERO);
+		primaAuto.setAlimentazione(EAlimentazione.IBRIDO);
+		primaAuto.setAnnoCostruzione("2020");
+		primaAuto.setCostruttore(ECostruttore.FERRARI);
+		primaAuto.setModello("corsa");
+		primaAuto.setCosto(new BigDecimal("4350670.50"));
+		
+		cerchiLega=new Accessorio();
+		cerchiLega.setClasse(EClasseAccessorio.ESTERNI);
+		cerchiLega.setTipologia(ETipologiaAccessorio.CERCHI);
+		cerchiLega.setCosto(new BigDecimal("3700.34"));
+		
+		primaAuto.getAccessori().add(cerchiLega);
+		automobili.add(primaAuto);
 	}
 
 	
