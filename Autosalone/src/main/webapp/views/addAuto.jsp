@@ -14,6 +14,7 @@
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
   <!-- Theme style -->
   <link rel="stylesheet" href="static/css/adminlte.min.css">
 </head>
@@ -70,13 +71,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="addAuto" class="nav-link">
+            <a href="insertData" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>Aggiungi Auto</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="addAuto" class="nav-link">
+            <a href="insertData" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>Cerca Auto</p>
             </a>
@@ -116,9 +117,29 @@
     <section class="content">
     <div class="clearfix">
        <div class="row">
-          <div class="md-col-12 text-center" >
-            
-            <img width="300" height="300" src="${urlImmagine}"/>
+       <c:if test="${error}">
+           <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="d-flex">
+                   <div class="toast-body">
+                     ${error}
+               </div>
+               <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+             </div>
+            </div>
+       </c:if>
+       
+       
+       <div class="md-col-4"></div>
+       
+          <div class="md-col-8" >
+           <form:form id="addAutoForm" action="addAuto" method="POST" modelAttribute="addAuto">
+            <label for="targa">Targa</label>
+           <form:input type="text" id="targa" name="targa" class="form-control" placeholder="targa" path="targa"/>
+           <br/>
+           <label for="prezzo">Prezzo</label>
+           <form:input type="text" id="prezzo" name="prezzo" class="form-control" placeholder="prezzo" path="prezzo"/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+           </form:form>
           </div>
        
        </div>
@@ -145,7 +166,9 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="static/js/plugins/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
 <!-- Bootstrap 4 -->
 <script src="static/js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
@@ -153,6 +176,30 @@
 <!-- Demo Template -->
 <script src="static/js/fireAjax.js"></script>
 <script src="static/js/demoTemplate.js"></script>
-
+<script>
+$("#addAutoForm").validate({
+	rules:{
+		targa:{
+			required:true,
+			minlength:7,
+			maxlength:7
+		 },
+		 prezzo:{
+			 required:true,
+			 maxlength:10
+		 }
+	},
+	messages:{
+		targa:{
+			required:'Errore! Campo obbligatorio',
+			minlength:'Errore! La targa deve essere di 7 caratteri',
+			maxlength:'Errore! La targa deve essere di 7 caratteri'
+		},
+		prezzo:{
+			required:'Errore! Campo obbligatorio'
+		}
+	}
+ });
+</script>
 </body>
 </html>

@@ -118,7 +118,9 @@
        <div class="row">
           <div class="md-col-12 text-center" >
             
-            <img width="300" height="300" src="${urlImmagine}"/>
+           <!-- campi che arrivano dal ModelMap -->
+          TARGA:  <input type="text" value="${auto.targa}"/>
+          COLORE: <input type="text" value="${auto.colore}"/>
           </div>
        
        </div>

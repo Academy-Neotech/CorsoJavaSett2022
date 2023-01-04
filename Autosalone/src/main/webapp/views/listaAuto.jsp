@@ -136,7 +136,10 @@
                         <td>${auto.modello}</td>
                         <td>${auto.annoCostruzione}</td>
                         <td>${auto.costo}</td>
-                        <td>pulsante</td>
+                        <td> 
+                        <a href='viewAuto?id=${auto.id}'><button type="button" class="btn btn-primary">dettaglio</button></a>
+                        <a href='removeAuto?id=${auto.id}'><button type="button" class="btn btn-danger">rimuovi</button></a>
+                        </td>
                         </tr>
               </c:forEach>
               
