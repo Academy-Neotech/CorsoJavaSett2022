@@ -129,7 +129,7 @@
            </form:select>
            
            
-            <form:select   id="costruttore" name="costruttore" path="costruttore" class="form-control">
+            <form:select  id="costruttore" name="costruttore" path="costruttore" class="form-control">
              <option value="0">Selezionare un costruttore</option>
             <form:options items="${costruttore}" />
            </form:select>
@@ -137,6 +137,8 @@
            </form:form>
            
           </div>
+       
+       
        
        </div>
     

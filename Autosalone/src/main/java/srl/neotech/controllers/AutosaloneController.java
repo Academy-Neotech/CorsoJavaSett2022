@@ -66,6 +66,10 @@ public class AutosaloneController {
 
 	@PostMapping(value="/addAuto")
 	public String addAuto(@Valid @ModelAttribute("addAuto") AddAutoRequest request,  ModelMap modelMap,  BindingResult result) {
+		
+	   if(result.hasErrors()) modelMap.addAttribute("listaErrori",result.getAllErrors());
+		
+		
 		System.out.println(request);
 		return "addAuto";
 	}
