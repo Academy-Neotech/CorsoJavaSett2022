@@ -129,6 +129,10 @@
           </div>
         </div>
         <div class="card-body">
+        <div id="messaggio" class="toast-body" style="display:none">
+         Lettura avvenuta correttamente!
+      </div>
+        
         <button type="button" class="btn btn-success" id="btnRecount" name="btnRecount">reCount</button>
         </div>
         <div class="row">
@@ -144,7 +148,13 @@
 			</div>
 		</div>
         
+    <div class="card-body">
+        <button type="button" class="btn btn-info" id="btnCallApi" name="btnCallApi">chiamata al MS</button>
+        </div>
+    <input type="text" id="response" disabled/>
+    <div>
     
+    </div>     
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -181,6 +191,39 @@
 <!-- Demo Template -->
 <script src="static/js/fireAjax.js"></script>
 <script src="static/js/demoTemplate.js"></script>
+<script>
+$("#btnCallApi").click(function(){
+	var result;
+	
+	result=fire_ajax_get("http://localhost:8080/MSTemplate-01/getElemento/1");
+	$("#response").val(JSON.stringify(result));
+	if(result.code=="OK")  $("#messaggio").show();
+	
 
+	var request={
+			"descrizione": "test",
+			"id": 37
+			};
+	
+	
+
+	result=fire_ajax_post("http://localhost:8080/MSTemplate-01/addElemento",request);
+	$("#response").val(JSON.stringify(result));
+	if(result.code=="OK") $("#messaggio").show();
+	
+	
+	
+	result=fire_ajax_get("http://localhost:8080/MSTemplate-01/getListaElementi");
+	console.log(result.code);
+	result.elementi.forEach(function(elemento) {
+	    console.log(elemento.id+".."+elemento.descrizione);
+	});
+	
+	
+});
+
+
+
+</script>
 </body>
 </html>

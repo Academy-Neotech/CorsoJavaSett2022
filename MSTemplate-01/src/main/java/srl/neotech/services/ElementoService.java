@@ -32,9 +32,22 @@ public class ElementoService {
 		return listaElementi;
 	}
 	
+	
+	@Transactional
+	public void compensaSddElemento(RequestAddElemento dati) {
+		
+	}
+	
 	@Transactional
 	public void addElemento(RequestAddElemento dati) {
 		Elemento elemento=new Elemento(dati.getId(), dati.getDescrizione());
+		//3 insert
+		//1 up
+		//1del
+		//chiamo m1  -- msA
+		//torna
+		//chiamo m2   --msX --msY
+		//chiamo m3
 		elementoDAO.addElemento(elemento);
 	}
 	

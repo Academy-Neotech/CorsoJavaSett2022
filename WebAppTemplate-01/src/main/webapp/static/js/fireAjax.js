@@ -8,8 +8,8 @@ var fire_ajax_post = function (send_url, send_data) {
         data: JSON.stringify(send_data),
         dataType: 'json',
         cache: false,
-        async:false,
-       // 200
+        async: false,
+       // 200 callBack...
         success: function (data) {
             retValue= data;
         },
@@ -29,7 +29,7 @@ var fire_ajax_get = function(send_url) {
         contentType: "application/json",
         url: send_url,
         cache: false,
-        async:false,
+        async: false,
         success: function (data) {
             retValue= data;
         },
