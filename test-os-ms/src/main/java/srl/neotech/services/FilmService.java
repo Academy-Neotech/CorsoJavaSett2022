@@ -1,15 +1,13 @@
 package srl.neotech.services;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import srl.neotech.dao.FilmDAO;
-import srl.neotech.model.Elemento;
-import srl.neotech.requestresponse.RequestAddElemento;
+import srl.neotech.model.Film;
+import srl.neotech.model.FilmAutocomplete;
 
 @Service
 public class FilmService {
@@ -19,6 +17,14 @@ public class FilmService {
 	
 	public Integer countFilm() {
 		return filmDAO.countFilm();
+	}
+	
+	public List<Film> getFilmByPopularity(Integer popularity){
+		return filmDAO.getFilmByPopularity(popularity);
+	}
+	
+	public List<FilmAutocomplete> getFilmAutoComplete(String txt){
+		return filmDAO.getFilmAutoComplete(txt);
 	}
 	
 	

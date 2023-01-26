@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="static/js/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="static/css/adminlte.min.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -128,11 +130,9 @@
           </div>
         </div>
         <div class="card-body">
-          WebTemplate: <a href="https://adminlte.io/themes/v3/">AdminLTE 3.0</a></br>
-          H2 console: <a href="http://localhost:8080/h2-console">console</a> </br>
-            .jdbc url: jdbc:h2:file:/h2/db.sql </br>
-            .user/pwd:sa/password </br>
-          data From BackEnd:<c:out value="${id}"/>
+        <!-- OGGETTO AUTOCOMPLETE -->
+         <input id="films" name="films" class="form-control basicAutoComplete" type="text" autocomplete="off">
+         
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -162,13 +162,42 @@
 
 <!-- jQuery -->
 <script src="static/js/plugins/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <!-- Bootstrap 4 -->
 <script src="static/js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 <!-- AdminLTE App -->
 <script src="static/js/adminlte.min.js"></script>
 <!-- Demo Template -->
 <script src="static/js/fireAjax.js"></script>
 <script src="static/js/demoTemplate.js"></script>
+<script>
 
+
+$("#films").autocomplete({
+    source: function( request, response ) {
+      $.ajax({
+        url: "http://localhost:8080/test-os-ms/getFilmAutoComplete?text="+request.term,
+        dataType: "json",
+        
+        success: function( data ) {
+          response( data.simpleData );
+        }
+      });
+    },
+    minLength: 3,
+    select: function( event, ui ) {
+        alert("id:"+ui.item.id+" titolo:"+ui.item.value);
+      },
+    open: function() {
+      $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+    },
+    close: function() {
+      $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+    }
+  });
+
+
+</script>
 </body>
 </html>

@@ -14,5 +14,10 @@ public class HomeController {
         return "home";
     }
     
-   
+  //Rotta per la home
+    @GetMapping(value="/meteo")
+    public String meteo() {
+        return "meteo";
+    }
+    
 }
