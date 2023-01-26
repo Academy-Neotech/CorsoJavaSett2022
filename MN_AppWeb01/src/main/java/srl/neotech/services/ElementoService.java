@@ -29,6 +29,7 @@ public class ElementoService {
 		ArrayList<Elemento> listaElementi=new ArrayList<Elemento>();
 		listaElementi.addAll(listaElementi_);
 		return listaElementi;
+		
 	}
 	
 	@Transactional

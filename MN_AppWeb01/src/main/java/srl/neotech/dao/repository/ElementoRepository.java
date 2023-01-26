@@ -68,8 +68,8 @@ public class ElementoRepository {
 	
 	public void addElemento(Elemento elemento) {
 		//configurazione TX
-		TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
-	    TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
+		//TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
+	  //  TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
 		
 		//Parametri da passsare alla query
 		MapSqlParameterSource params=new MapSqlParameterSource();
@@ -80,19 +80,19 @@ public class ElementoRepository {
 		String query="insert into Elemento(id, descrizione) VALUES (:idElemento, :descrElemento)";
 		try {
 			jdbcTemplate.update(query,params);
-			transactionManager.commit(transactionStatus);
+			//transactionManager.commit(transactionStatus);
 		} catch (DataAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			transactionManager.rollback(transactionStatus);
+			//transactionManager.rollback(transactionStatus);
 		}
 	}
 	
 	
 	public void updateElemento (Elemento elemento) {
 		//configurazione TX
-		TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
-	    TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
+	//	TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
+	   // TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
 	    
 	  //Parametri da passsare alla query
 	  MapSqlParameterSource params=new MapSqlParameterSource();
@@ -104,18 +104,18 @@ public class ElementoRepository {
 	  
 	  try {
 		jdbcTemplate.update(query,params);
-		transactionManager.commit(transactionStatus);
+	//	transactionManager.commit(transactionStatus);
 	} catch (DataAccessException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
-		transactionManager.rollback(transactionStatus);
+	//	transactionManager.rollback(transactionStatus);
 	}
 	}
 	
 	public void deleteElemento(Integer idelemento) {
 		//configurazione TX
-		TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
-	    TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
+	//	TransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
+	 //   TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
 	    
 	  //Parametri da passsare alla query
 	  MapSqlParameterSource params=new MapSqlParameterSource();
@@ -126,11 +126,11 @@ public class ElementoRepository {
 	 
 	  try {
 		jdbcTemplate.update(query,params);
-		transactionManager.commit(transactionStatus);
+	//	transactionManager.commit(transactionStatus);
 	} catch (DataAccessException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
-		transactionManager.rollback(transactionStatus);
+	//	transactionManager.rollback(transactionStatus);
 	}
 	  
 	  
