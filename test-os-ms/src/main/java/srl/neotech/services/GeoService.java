@@ -10,7 +10,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import srl.neotech.dao.GeoDao;
 import srl.neotech.model.MeteoGiornaliero;
-import srl.neotech.model.OpenMeteoDaily;
 import srl.neotech.model.OpenMeteoRoot;
 import srl.neotech.model.Provincia;
 
@@ -34,6 +33,8 @@ public class GeoService {
 		.retrieve()
 		.bodyToMono(OpenMeteoRoot.class).block();
 
+
+		
 		System.out.println("giorni:"+root.getDaily().getTime()+" whethercode:"+root.getDaily().getWeathercode());
 		List<MeteoGiornaliero> giorni=new ArrayList<>();
 		for(int i=0;i<root.getDaily().getTime().size();i++) {
