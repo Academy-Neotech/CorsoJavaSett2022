@@ -1,5 +1,7 @@
 package srl.neotech.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,6 +32,25 @@ public class FilmController {
 		}
 	return response;
 	}
+	
+	
+	@GetMapping("/getFilmByActor")
+	public ResponseBase getFilmByActor(@RequestParam("name") String name) {
+		ResponseBase response=new ResponseBase();
+		
+		try {
+			List<Film> films=filmService.getFilmByActor(name);
+			response.setSimpleData(films);
+			response.setCode("OK");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			response.setCode("KO");
+			response.setDescr(e.getMessage());
+		}
+	return response;
+	}
+
+	
 	
 	
 	@GetMapping("insertMovie")
