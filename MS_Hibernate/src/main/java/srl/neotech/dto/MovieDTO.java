@@ -1,6 +1,6 @@
-package srl.neotech.model;
+package srl.neotech.dto;
 
-public class Film {
+public class MovieDTO {
 	
 	private Integer id;
 	private String title;

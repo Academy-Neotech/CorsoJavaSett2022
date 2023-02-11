@@ -68,6 +68,10 @@ public class Movie {
 
     @OneToMany(mappedBy = "movie",fetch = FetchType.LAZY)
     private Set<MovieCrew> movieCrews = new LinkedHashSet<>();
+    
+    
+    @OneToMany(mappedBy = "movie",fetch = FetchType.LAZY)
+    private Set<MovieGenre> movieGenres = new LinkedHashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "movie_genres",
@@ -263,5 +267,15 @@ public class Movie {
     public void setProductionCompanies(Set<ProductionCompany> productionCompanies) {
         this.productionCompanies = productionCompanies;
     }
+
+	public Set<MovieGenre> getMovieGenres() {
+		return movieGenres;
+	}
+
+	public void setMovieGenres(Set<MovieGenre> movieGenres) {
+		this.movieGenres = movieGenres;
+	}
+    
+    
 
 }
