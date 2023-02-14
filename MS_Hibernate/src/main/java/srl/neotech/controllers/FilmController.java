@@ -156,4 +156,19 @@ public class FilmController {
 	}
 	
 	
+	@GetMapping("getPersonSpec")
+	public ResponseBase getPersonSpec(@RequestParam("name") String name) {
+		ResponseBase response=new ResponseBase();	
+		try {
+			List<PersonaggioDTO> personaggi=filmService.getPersonByNameSpec(name);
+			response.setSimpleData(personaggi);
+			response.setCode("OK");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			response.setCode("KO");
+			response.setDescr(e.getMessage());
+		}
+		return response;
+	}
+	
 }

@@ -14,7 +14,8 @@ public interface MovieRepository extends JpaRepository<Movie, Integer>{
 	
 	//                          alias di movie
 	//                                              alias di MovieCast  alias di person
-	//                                                                 
+	// 
+	//     HQL.. vanno sul db entity.... 
 	@Query("select m from Movie m join m.movieCasts mc join mc.person   p where p.personName like %:name%")
 	public List<Movie> getFilmByActor(String name);
 	

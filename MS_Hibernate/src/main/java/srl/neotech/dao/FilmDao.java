@@ -47,7 +47,7 @@ public class FilmDao {
 		 //premessa..
 		 CriteriaBuilder cb = entityManager.getCriteriaBuilder();
 	     CriteriaQuery<Movie> cq = cb.createQuery(Movie.class);
-	     Root<Movie> movie = cq.from(Movie.class);
+	     Root<Movie> movie = cq.from(Movie.class);  //select * from movie.
 	     
 	     //impostazione delle where..
 	     Predicate budgetrPredicate = cb.greaterThan(movie.get("budget"), budget);
@@ -87,7 +87,7 @@ public class FilmDao {
 	
 	
 	public List<Movie> getMovieFromGenereAndPopolairta(String genere, Integer popolarita) {
-		Pageable page = PageRequest.of(0, 5);
+		Pageable page = PageRequest.of(1, 5);
 		BigDecimal b=new BigDecimal(popolarita);
 		return movieRepository.getMovieByGenreandPopularity(genere, b,page);
 	}

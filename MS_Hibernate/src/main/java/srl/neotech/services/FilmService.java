@@ -18,6 +18,7 @@ import srl.neotech.dto.PersonaggioDTO;
 import srl.neotech.entity.Country;
 import srl.neotech.entity.Movie;
 import srl.neotech.entity.MovieCast;
+import srl.neotech.entity.Person;
 import srl.neotech.entity.PersonaggioEntity;
 import srl.neotech.repository.MovieRepository;
 
@@ -115,6 +116,16 @@ public class FilmService {
 			movieRitornati.add(unMovie);
 		}
  		return movieRitornati;
+	}
+	
+	public List<PersonaggioDTO> getPersonByNameSpec(String name){
+		List<PersonaggioDTO> personsRitornati=new ArrayList<>();
+		List<Person> persons=personDao.getPersonByNameSpec(name);
+		for(Person p:persons) {
+			PersonaggioDTO unPerson=modelMapper.map(p,PersonaggioDTO.class);
+			personsRitornati.add(unPerson);
+		}
+ 		return personsRitornati;
 	}
 	
 	
